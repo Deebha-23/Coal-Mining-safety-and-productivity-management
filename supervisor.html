@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MinePro - Supervisor Dashboard</title>
+  <link rel="stylesheet" href="supervisor.css">
+</head>
+<body>
+
+<header class="header">
+
+  <div class="left-header">
+    <a href="HTML1.html" class="arrow">&larr;</a>
+    <div class="logo">
+      <img src="images/logo2.png" alt="Logo">
+    </div>
+  </div>
+
+  <div class="user-info">
+    <span id="userName">Supervisor</span>
+    <a href="#" class="notifications">🔔 3</a>
+    <a href="HTML1.html" class="logout">Logout</a>
+  </div>
+
+</header>
+
+<main class="dashboard">
+
+  <!-- Safety Alerts -->
+  <section class="safety-alerts">
+    <h2>Safety Alerts</h2>
+    <div class="alert red-alert">Gas leaks detected at Zone B.</div>
+    <div class="alert yellow-alert">Scheduled maintenance due in Zone A.</div>
+  </section>
+
+  <!-- Task Manager -->
+  <section class="task-manager">
+    <h2>Task Manager</h2>
+    <button class="task-manager-btn" onclick="location.href='task.html'">
+      Job Assignment
+    </button>
+    <button class="daily-update-btn" onclick="location.href='daily-update.html'">
+      Daily Updates
+    </button>
+    <button class="safety-alerts-btn" onclick="location.href='safetymanagement.html'">
+      Safety Alerts
+    </button>
+  </section>
+
+  <!-- Productivity Overview -->
+  <section class="productivity-stats">
+    <h2>Productivity Overview</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3>Today's Output</h3>
+        <p>1250 tons</p>
+      </div>
+      <div class="stat">
+        <h3>Active Workers</h3>
+        <p>35</p>
+      </div>
+      <div class="stat">
+        <h3>Equipment Status</h3>
+        <p>Under Maintenance</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ LIVE MAP SECTION -->
+  <section class="worker-map">
+    <h2>Live Mine Location Map</h2>
+    <iframe
+      src="https://www.google.com/maps?q=coal+mine+india&output=embed"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <a href="susupport.html">Help/Support</a>
+  <a href="sprivacy policy.html">Privacy Policy</a>
+  <a href="susettings.html">Settings</a>
+</footer>
+
+<script src="supervisor.js"></script>
+</body>
+</html>

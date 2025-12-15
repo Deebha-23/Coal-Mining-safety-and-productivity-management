@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinePro - Report an Incident</title>
+  <link rel="stylesheet" href="incident.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="arrow-navigation">
+      <a href="worker.html" class="arrow left-arrow">&larr; </a>
+    </nav>
+    <h1 id="report-incident-title">Report an Incident</h1>
+  </header>
+
+  <div class="language-selector">
+    <label for="language">Language: </label>
+    <select id="language">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="ta">Tamil</option>
+    </select>
+  </div>
+
+  <main class="form-container">
+    <form id="incidentForm">
+      <div class="input-group">
+        <label for="incidentType" id="incident-type-label">Incident Type</label>
+        <select id="incidentType" name="incidentType" required>
+          <option value="gasLeak">Gas Leak</option>
+          <option value="equipmentFailure">Equipment Failure</option>
+          <option value="injury">Injury</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="description" id="description-label">Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe the incident" required></textarea>
+      </div>
+
+      <div class="input-group">
+        <label for="location" id="location-label">Location</label>
+        <input type="text" id="location" name="location" placeholder="Enter incident location" required>
+      </div>
+
+      <button type="submit" id="submit-incident">Submit</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <a href="#" id="help-support">Help/Support</a>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+<script src="incident.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinePro - Login</title>
+  <link rel="stylesheet" href="CSS1.css">
+  <link rel="icon" href="images/logo2.png">
+</head>
+<body>
+    <div class="top-section"></div>
+    <div class="logo-box">
+        <div style="white-space: nowrap;">
+            <img src="images\logo2.png" width="150" height="150">
+        </div>
+    </div>
+  <div class="login-container">
+    <div class="login-box">
+      <h2><b>MinePro - Safety & Productivity</b></h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username">Employee ID</label>
+          <input type="text" id="username" name="username" placeholder="Enter Employee ID" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        </div>
+        <div class="role-selector">
+         <label for="role">Role</label>
+         <select id="role" name="role">
+            <option value="worker">Worker</option>
+            <option value="supervisor">Supervisor</option>
+            <option value="other personnel">Other personnel</option>
+          </select>
+        </div>
+        <button type="submit" class="login-btn" id="btn" onclick="myFunction()">Log In</button>
+<button type="button" class="login-btn" id="signupBtn" style="margin-top:10px;background:#e65c00;">
+  Sign Up
+</button>
+
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </form>
+      <div class="language-selector">
+        <label for="language">Language: </label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="ta">Tamil</option>
+          <option value="hi">Hindi</option>
+        </select>
+      </div>
+      <div class="help">
+        <a href="#">Help/Support</a>
+      </div>
+    </div>
+  </div>
+<h1 id="mytext"></h1>
+</body>
+<script src="JAVASCRIPT1.js"></script>
+</html>                   

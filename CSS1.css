@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(images/bg5.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; height: 110vh; margin: 0;
+}
+
+.top-section {
+  background-color: #ff6600;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo-box {
+  position: absolute;
+  top: 70px; /* Adjust the value to place the image below the top section */
+  left: 20px;
+  width:auto;
+  padding:-10px;
+}
+
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 120px; /* Creates space between the image and the login box */
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 380px;
+  text-align: center;
+}
+.logo:hover{
+  width: 800px;
+  padding: 40px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.role-selector label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-left: -230px;
+}
+
+.role-selector {
+  margin-top: 20px;
+}
+
+.role-selector select {
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.login-btn {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #e65c00;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.language-selector {
+  margin-top: 20px;
+}
+
+.language-selector select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.help {
+  margin-top: 15px;
+}
+
+.help a {
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
+

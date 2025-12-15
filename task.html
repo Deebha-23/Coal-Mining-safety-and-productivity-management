@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Assignment</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="arrow-navigation">
+      <a href="supervisor.html" class="arrow left-arrow">&larr; </a>
+    </nav>
+    <h1>Job Assignment Form</h1>
+  </header>
+
+  <main class="form-container">
+    <form id="jobAssignmentForm">
+      <div class="input-group">
+        <label for="jobTitle">Job Title/Description</label>
+        <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title or description" required>
+      </div>
+
+      <div class="input-group">
+        <label for="employeeID">Employee ID</label>
+        <input type="text" id="employeeID" name="employeeID" placeholder="Enter employee ID" required>
+      </div>
+	  <div class="input-group">
+        <label for="employeeName">Employee Name</label>
+        <input type="text" id="employeeName" name="employeeName" placeholder="Enter employee Name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="startTime">Start Time</label>
+        <input type="datetime-local" id="startTime" name="startTime" required>
+      </div>
+
+      <div class="input-group">
+        <label for="endTime">End Time</label>
+        <input type="datetime-local" id="endTime" name="endTime" required>
+      </div>
+
+      <div class="input-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="Enter location" required>
+      </div>
+
+      <div class="input-group">
+        <label for="details">Additional Details</label>
+        <textarea id="details" name="details" placeholder="Enter additional details or instructions" rows="4"></textarea>
+      </div>
+
+      <button type="submit">Assign Job</button>
+    </form>
+
+    <section id="assignedJobs">
+      <h2>Assigned Jobs</h2>
+      <ul id="jobsList"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#">Help/Support</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Settings</a>
+  </footer>
+
+</body> 
+<script src="task.js"></script>
+
+
+

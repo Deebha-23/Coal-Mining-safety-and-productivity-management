@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinePro - safetyAlertForm</title>
+  <link rel="stylesheet" href="safetymanagement.css">
+  </head>
+<body>
+    <header class="header">
+        <nav class="arrow-navigation">
+            <a href="supervisor.html" class="arrow left-arrow">&larr; </a>
+         </nav>
+      <h1 id="report-incident-title">Safety Alert Form</h1>
+    </header>
+  
+    <main class="form-container">
+      <form id="safetyAlertForm">
+        <label for="alertTitle">Alert Title:</label>
+        <input type="text" id="alertTitle" name="alertTitle" required>
+  
+        <label for="alertDescription">Alert Description:</label>
+        <textarea id="alertDescription" name="alertDescription" required></textarea>
+  
+        <label for="severity">Severity:</label>
+        <select id="severity" name="severity" required>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+  
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+  
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+  
+        <button type="submit" class="submit-btn" id="btn">Send Alert</button>
+      </form>
+    </main>
+  
+  
+    <script src="form.js"></script>
+    <script src="safetymanagement.js"></script>
+  </body>
+  </html>
+  

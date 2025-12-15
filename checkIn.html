@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinePro - Check In</title>
+  <link rel="stylesheet" href="checkIn.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="arrow-navigation">
+      <a href="worker.html" class="arrow left-arrow">&larr; </a>
+    </nav>
+    <h1 id="check-in-title">Check In</h1>
+  </header>
+
+  <div class="language-selector">
+    <label for="language">Language: </label>
+    <select id="language">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="ta">Tamil</option>
+    </select>
+  </div>
+
+  <main class="form-container">
+    <form id="checkInForm">
+      <div class="input-group">
+        <label for="employeeID" id="employee-id-label">Employee ID</label>
+        <input type="text" id="employeeID" name="employeeID" placeholder="Enter your Employee ID" required>
+      </div>
+
+      <div class="input-group">
+        <label for="checkInTime" id="check-in-time-label">Check In Time</label>
+        <input type="datetime-local" id="checkInTime" name="checkInTime" required>
+      </div>
+
+      <div class="input-group">
+        <label for="location" id="location-label">Location</label>
+        <input type="text" id="location" name="location" placeholder="Enter your current location" required>
+      </div>
+
+      <button type="submit" id="submit-check-in">Submit</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <a href="#" id="help-support">Help/Support</a>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+<script src="checkIn.js"></script>
+</html>

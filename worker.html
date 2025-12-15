@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MinePro - Worker Dashboard</title>
+  <link rel="stylesheet" href="worker.css" />
+</head>
+
+<body>
+
+<header class="header">
+
+  <!-- LEFT SIDE (Back + Logo) -->
+  <div class="left-header">
+    <a href="HTML1.html" class="arrow">←</a>
+    <img src="images/logo2.png" class="logo" />
+  </div>
+
+  <!-- RIGHT SIDE (User Info) -->
+  <div class="user-info">
+    <span id="Name"></span>
+    <a href="#" class="notifications">🔔 3</a>
+    <a href="HTML1.html" class="logout">Logout</a>
+  </div>
+
+</header>
+
+<main class="dashboard">
+
+  <section id="alertmessage">
+    <h2>Alert List</h2>
+    <ul id="alertsList"></ul>
+  </section>
+
+  <section class="quick-actions">
+    <h2>Quick Actions</h2>
+    <div class="actions">
+      <button onclick="location.href='incident.html'">Report an Incident</button>
+      <button onclick="location.href='equipment.html'">Request Equipment</button>
+      <button onclick="location.href='checkIn.html'">Check In</button>
+    </div>
+  </section>
+
+  <section id="assignedJobs">
+    <h2>Assigned Jobs</h2>
+    <ul id="jobsList"></ul>
+  </section>
+
+  <section class="worker-map">
+    <h2>Real-Time Worker Locations</h2>
+    <iframe
+      src="https://www.google.com/maps?q=Coal+India+Limited&output=embed"
+      loading="lazy">
+    </iframe>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <a href="wsupport.html">Help/Support</a>
+  <a href="wprivacy policy.html">Privacy Policy</a>
+  <a href="wsettings.html">Settings</a>
+</footer>
+
+<script src="worker.js"></script>
+</body>
+</html>
