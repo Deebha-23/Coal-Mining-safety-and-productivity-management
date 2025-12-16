@@ -129,5 +129,5 @@ Deebha A
 BE – Computer Science Engineering
 Agni College of Technology
 
-📧 Email: haripriyaayothi2002@gmail.com
+📧 Email: deebha2022@gmail.com
 🔗 LinkedIn: https://www.linkedin.com/in/deebha-a-b164332b7
